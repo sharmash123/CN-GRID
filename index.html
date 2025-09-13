@@ -77,16 +77,15 @@
       border-collapse: collapse;
       margin: 0 auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      min-width: 400px;
     }
 
     td {
       border: 1px solid #000000;
-      aspect-ratio: 1 / 1;   /* 🔥 Keeps cells square */
-      min-width: 55px;       /* Base size */
-      min-height: 55px;
+      aspect-ratio: 1 / 1;   /* ✅ Perfect square */
+      width: 60px;           /* Base cell size */
+      height: auto;
       text-align: center;
-      font-size: 18px;       /* Bigger font */
+      font-size: 20px;       /* ✅ Bigger font */
       cursor: pointer;
       background-color: #ffffff;
       position: relative;
@@ -147,9 +146,8 @@
       }
 
       td {
-        min-width: 65px;   /* Bigger squares on mobile */
-        min-height: 65px;
-        font-size: 20px;
+        width: 70px;       /* Bigger squares on mobile */
+        font-size: 22px;   /* Larger font */
       }
     }
   </style>
@@ -190,5 +188,7 @@
   <script src="compare-cn.js"></script>
 </body>
 </html>
+
+
 
 
